@@ -5,9 +5,9 @@ pipeline {
   stages {
          stage("pullcode"){
            steps{
-             git{
+             git(
                   url: 'https://github.com/teerawat104/sum.git',
-             }
+             )
            }
          }
          stage("Setup path") {
