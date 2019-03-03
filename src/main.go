@@ -1,12 +1,12 @@
 package main
 
 import (
-	. "baac"
+	. "example/sum"
 	"fmt"
 )
 
 func main() {
-	baac := MyAdd(4, 2)
+	sum := MyAdd(4, 2)
 	i := 5
-	fmt.Println("hello world", i, baac)
+	fmt.Println("hello world", i, sum)
 }
