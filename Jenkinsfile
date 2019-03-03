@@ -19,7 +19,7 @@ environment {
      }
      stage("build docker"){
        steps{
-          sh "docker build -t baac/sum -f Dockerfile"
+          sh "docker build -t baac/sum -f Dockerfile ."
        }
      }
    }
