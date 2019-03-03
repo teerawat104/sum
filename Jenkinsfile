@@ -10,7 +10,12 @@ environment {
              git(
                   url: 'https://github.com/teerawat104/sum.git',
              )
-               }
+             }
            }
-           }
+    stage("unit test"){
+        steps{
+          sh "cd src && go test -cover ./..."
+        }
+     }
+   }
 }
