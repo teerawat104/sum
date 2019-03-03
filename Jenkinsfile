@@ -14,7 +14,7 @@ environment {
            }
     stage("unit test"){
         steps{
-          bat "cd src && go test -cover ./..."
+          sh "cd src && go test -cover ./..."
         }
      }
    }
