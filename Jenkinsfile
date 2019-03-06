@@ -14,12 +14,12 @@ environment {
            }
     stage("unit test"){
         steps{
-          sh "cd src && go test -cover ./..."
+          bat "cd src && go test -cover ./..."
         }
      }
      stage("build docker"){
        steps{
-          sh "docker build -t baac/sum -f Dockerfile ."
+          bat "docker build -t baac/sum -f Dockerfile ."
        }
      }
    }
