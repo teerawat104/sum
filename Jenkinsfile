@@ -17,10 +17,5 @@ environment {
           bat "cd src && go test -cover ./..."
         }
      }
-     stage("build docker"){
-       steps{
-          bat "docker build -t baac/sum -f Dockerfile ."
-       }
-     }
    }
 }
