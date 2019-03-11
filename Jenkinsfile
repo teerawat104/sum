@@ -2,13 +2,13 @@ pipeline {
    agent any
 
 environment {
-    GOPATH="${env.WORKSPACE}/.gopath"
+    GOPATH="${env.WORKSPACE}
 }
   stages {
     stage("pullcode"){
            steps{
              git(
-                  url: 'https://github.com/teerawat104/sum.git',
+                  url: 'ttps://github.com/teerawat104/sum.git',
              )
              }
            }
